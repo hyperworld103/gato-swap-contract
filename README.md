@@ -1,2 +1,2 @@
 # gato-swap-contract
-This project is GOTA swap contract for our own gato token on BSC
+This project is GATO swap contract for our own gato token on BSC
