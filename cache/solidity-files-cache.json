@@ -1,0 +1,659 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\GatoswapFactory.sol": {
+      "lastModificationDate": 1651228256794,
+      "contentHash": "14aa95d4d1fd1b014ebf9a5e2626cec7",
+      "sourceName": "contracts/GatoswapFactory.sol",
+      "solcConfig": {
+        "version": "0.5.16",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IGatoswapFactory.sol",
+        "./interfaces/IGatoswapERC20.sol",
+        "./interfaces/IGatoswapCallee.sol",
+        "./interfaces/IGatoswapPair.sol",
+        "./interfaces/IERC20.sol",
+        "./libraries/SafeMath.sol",
+        "./libraries/UQ112x112.sol",
+        "./libraries/Math.sol"
+      ],
+      "versionPragmas": [
+        "=0.5.16"
+      ],
+      "artifacts": [
+        "GatoswapERC20",
+        "GatoswapFactory",
+        "GatoswapPair"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\libraries\\Math.sol": {
+      "lastModificationDate": 1651226943970,
+      "contentHash": "757d9ffe45030163bba4263cd75f3483",
+      "sourceName": "contracts/libraries/Math.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\libraries\\UQ112x112.sol": {
+      "lastModificationDate": 1651226930090,
+      "contentHash": "5c20a9cecc1caf9ddc4be2133c9d1229",
+      "sourceName": "contracts/libraries/UQ112x112.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "UQ112x112"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\libraries\\SafeMath.sol": {
+      "lastModificationDate": 1651226939565,
+      "contentHash": "e427bb0e5724c5b46a94e59ba78c9c03",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\libraries\\GatoswapLibrary.sol": {
+      "lastModificationDate": 1651228841418,
+      "contentHash": "c2113d39d32eb24c4d8606ee9cd0460d",
+      "sourceName": "contracts/libraries/GatoswapLibrary.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./SafeMath.sol",
+        "../interfaces/IGatoswapPair.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "GatoswapLibrary"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IGatoswapPair.sol": {
+      "lastModificationDate": 1651226860079,
+      "contentHash": "477f41da43d4dc7c4d09cd66f4cacab2",
+      "sourceName": "contracts/interfaces/IGatoswapPair.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IGatoswapPair"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\libraries\\TransferHelper.sol": {
+      "lastModificationDate": 1651226934779,
+      "contentHash": "f80d6b13eb86ff1c247c6d22ae3f120f",
+      "sourceName": "contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IERC20.sol": {
+      "lastModificationDate": 1651226842288,
+      "contentHash": "16689e0cd214ebe50985813172b4bcfb",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IWETH.sol": {
+      "lastModificationDate": 1651226874422,
+      "contentHash": "471dfd133d77fe5385891f47dd453ba9",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IGatoswapFactory.sol": {
+      "lastModificationDate": 1651226854985,
+      "contentHash": "b6fcb2e64909b7338704671866ba2940",
+      "sourceName": "contracts/interfaces/IGatoswapFactory.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IGatoswapFactory"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IGatoswapRouter02.sol": {
+      "lastModificationDate": 1651226868649,
+      "contentHash": "e83695aaa4c830abff8df1bfdb7de0e9",
+      "sourceName": "contracts/interfaces/IGatoswapRouter02.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "IGatoswapRouter01",
+        "IGatoswapRouter02"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IGatoswapCallee.sol": {
+      "lastModificationDate": 1651226848833,
+      "contentHash": "e441bc419a3d8d535aedb3b94dd0cbea",
+      "sourceName": "contracts/interfaces/IGatoswapCallee.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IGatoswapCallee"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IGatoswapERC20.sol": {
+      "lastModificationDate": 1651226821892,
+      "contentHash": "a9f58a6992a69329c4233c60422b9f18",
+      "sourceName": "contracts/interfaces/IGatoswapERC20.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IGatoswapERC20"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\GatoswapRouter.sol": {
+      "lastModificationDate": 1651226617807,
+      "contentHash": "521a44a607dfaf46bffe4f407eb32a80",
+      "sourceName": "contracts/GatoswapRouter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IGatoswapRouter02.sol",
+        "./interfaces/IGatoswapFactory.sol",
+        "./interfaces/IWETH.sol",
+        "./interfaces/IGatoswapPair.sol",
+        "./interfaces/IERC20.sol",
+        "./libraries/SafeMath.sol",
+        "./libraries/GatoswapLibrary.sol",
+        "./libraries/TransferHelper.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "GatoswapRouter"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\WETH.sol": {
+      "lastModificationDate": 1651231021843,
+      "contentHash": "cb6657118ea15b5b4cb9c8cd02ab964f",
+      "sourceName": "contracts/WETH.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.4"
+      ],
+      "artifacts": [
+        "WETH"
+      ]
+    }
+  }
+}
