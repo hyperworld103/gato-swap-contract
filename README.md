@@ -1,12 +1,6 @@
-<<<<<<< HEAD
 # GATO SWAP Contract
 GATO SWAP Contract forks the Pancake swap
 Change base fee to 1%
-=======
-# Velamis token contract
-
-Velamis is ERC20 token for Velamis tokenomics
->>>>>>> a2fa6ba95fd0e2ebd12bb1356d8b7859efc0ed14
 ### Installation
 ```sh
 # Clone the repo
