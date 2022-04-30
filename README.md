@@ -3,12 +3,13 @@ GATO SWAP Contract forks the Pancake swap on Binance Smart Chain.
 Change base fee to 1%.
 ### Deployed Address
 ```sh
+# BSC mainnet
+    GatoswapFactory: 
+    GatoswapRouter:
+
 # BSC testnet
     GatoswapFactory: https://testnet.bscscan.com/address/0x15E4c88D1433CC12C61a9853621c6fF413874899
     GatoswapRouter:  https://testnet.bscscan.com/address/0xD9876733D2B7f2331136F2659646EFd046de988b
-#BSC mainnet
-    GatoswapFactory: 
-    GatoswapRouter:
 ```
 ### Installation
 ```sh
@@ -27,18 +28,13 @@ npx hardhat test
 ```
 ### Deploy contract
 ```sh
-Factory BSC testnet deploy
-npx hardhat run scripts/deploy_factory.js --network bsctestnet
+# BSC mainnet deploy
+Factory: npx hardhat run scripts/deploy_factory.js --network bscmainnet
+Router:  npx hardhat run scripts/deploy_router.js --network bscmainnet
 
-Router BSC testnet deploy
-npx hardhat run scripts/deploy_router.js --network bsctestnet
-```
-```sh
-Factory BSC testnet deploy
-npx hardhat run scripts/deploy_factory.js --network bscmainnet
-
-Router BSC testnet deploy
-npx hardhat run scripts/deploy_router.js --network bscmainnet
+# BSC testnet deploy
+Factory: npx hardhat run scripts/deploy_factory.js --network bsctestnet
+Router:  npx hardhat run scripts/deploy_router.js --network bsctestnet
 ```
 ### Modifiers
 ##### onlyStopper
