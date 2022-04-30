@@ -1,6 +1,6 @@
 # GATO SWAP Contract
-GATO SWAP Contract forks the Pancake swap
-Change base fee to 1%
+GATO SWAP Contract forks the Pancake swap.
+Change base fee to 1%.
 ### Installation
 ```sh
 # Clone the repo
