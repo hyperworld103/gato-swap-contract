@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-# Velamis token contract
-
-Velamis is ERC20 token for Velamis tokenomics
+# GATO SWAP Contract
+GATO SWAP Contract forks the Pancake swap
+Change base fee to 1%
 ### Installation
 ```sh
 # Clone the repo
-    git clone https://gitlab.com/merehead/velamis/velamis_token_contracts.git
+    git clone https://gitlab.com/merehead/gato/gato_swap_contracts.git
 # Install all dependencies
     npm install
 ```
@@ -19,7 +18,18 @@ npx hardhat test
 ```
 ### Deploy contract
 ```sh
-npx hardhat run scripts/deploy.js
+Factory BSC testnet deploy
+npx hardhat run scripts/deploy_factory.js --network bsctestnet
+
+Router BSC testnet deploy
+npx hardhat run scripts/deploy_router.js --network bsctestnet
+```
+```sh
+Factory BSC testnet deploy
+npx hardhat run scripts/deploy_factory.js --network bscmainnet
+
+Router BSC testnet deploy
+npx hardhat run scripts/deploy_router.js --network bscmainnet
 ```
 ### Modifiers
 ##### onlyStopper
