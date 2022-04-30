@@ -306,10 +306,6 @@ contract GatoswapFactory is IGatoswapFactory {
         feeToSetter = _feeToSetter;
     }
 
-    function init_code_pair_hash() external pure returns(bytes32) {
-        return INIT_CODE_PAIR_HASH;
-    }
-
     function allPairsLength() external view returns (uint) {
         return allPairs.length;
     }

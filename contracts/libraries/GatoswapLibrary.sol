@@ -23,10 +23,7 @@ library GatoswapLibrary {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                IGatoswapFactory(factory).init_code_pair_hash()
-                //hex'd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66'
-                // hex'00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
-                //hex'b73937cdeb394394372abcde3493924328bde8e82cedf2923bc343234eeee287' // init code hash
+                hex'722a5085ab366aa876a6904a6bdf9e741b17adb66a790db570c927fe4847ae6b'
             )))));
     }
 

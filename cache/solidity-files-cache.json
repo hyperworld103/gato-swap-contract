@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\GatoswapFactory.sol": {
-      "lastModificationDate": 1651281097964,
-      "contentHash": "5f71ed30697a9f5eb23cc586f4372331",
+      "lastModificationDate": 1651296477020,
+      "contentHash": "1b073d52483d25ccb337e9178946e2be",
       "sourceName": "contracts/GatoswapFactory.sol",
       "solcConfig": {
         "version": "0.5.16",
@@ -181,8 +181,8 @@
       ]
     },
     "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\libraries\\GatoswapLibrary.sol": {
-      "lastModificationDate": 1651267809825,
-      "contentHash": "82e41880ff826cd93da081276f91b904",
+      "lastModificationDate": 1651297024059,
+      "contentHash": "2b13bbc774cb83cad390ffdb44cb7f5f",
       "sourceName": "contracts/libraries/GatoswapLibrary.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -395,8 +395,8 @@
       ]
     },
     "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IGatoswapFactory.sol": {
-      "lastModificationDate": 1651266653250,
-      "contentHash": "bbc5b42a1ca4bf548cd82f6bd4cb5cb9",
+      "lastModificationDate": 1651296522359,
+      "contentHash": "b6fcb2e64909b7338704671866ba2940",
       "sourceName": "contracts/interfaces/IGatoswapFactory.sol",
       "solcConfig": {
         "version": "0.8.10",

@@ -16,6 +16,4 @@ interface IGatoswapFactory {
 
     function setFeeTo(address) external;
     function setFeeToSetter(address) external;
-
-    function init_code_pair_hash() external pure returns(bytes32);
 }
