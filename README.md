@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Velamis token contract
 
 Velamis is ERC20 token for Velamis tokenomics
