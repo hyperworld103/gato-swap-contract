@@ -1,9 +1,10 @@
-import "./SafeMath.sol";
-import "../interfaces/IGatoswapPair.sol";
-
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity >=0.5.0;
+
+import "./SafeMath.sol";
+import "../interfaces/IGatoswapPair.sol";
+import "../interfaces/IGatoswapFactory.sol";
 
 library GatoswapLibrary {
     using SafeMath for uint;
@@ -22,7 +23,10 @@ library GatoswapLibrary {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'b73937cdeb394394372abcde3493924328bde8e82cedf2923bc343234eeee287' // init code hash
+                IGatoswapFactory(factory).init_code_pair_hash()
+                //hex'd0d4c4cd0848c93cb4fd1f498d7013ee6bfb25783ea21593d5834f5d250ece66'
+                // hex'00fb7f630766e6a796048ea87d01acd3068e8ff67d078148a3fa3f4a84f69bd5'
+                //hex'b73937cdeb394394372abcde3493924328bde8e82cedf2923bc343234eeee287' // init code hash
             )))));
     }
 

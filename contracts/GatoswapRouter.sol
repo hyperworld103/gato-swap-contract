@@ -1,3 +1,5 @@
+pragma solidity =0.6.6;
+
 import "./interfaces/IGatoswapRouter02.sol";
 import "./interfaces/IGatoswapFactory.sol";
 import "./interfaces/IWETH.sol";
@@ -6,8 +8,6 @@ import "./interfaces/IERC20.sol";
 import "./libraries/SafeMath.sol";
 import "./libraries/GatoswapLibrary.sol";
 import "./libraries/TransferHelper.sol";
-
-pragma solidity =0.6.6;
 
 contract GatoswapRouter is IGatoswapRouter02 {
     using SafeMath for uint;

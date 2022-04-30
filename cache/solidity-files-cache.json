@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\GatoswapFactory.sol": {
-      "lastModificationDate": 1651228256794,
-      "contentHash": "14aa95d4d1fd1b014ebf9a5e2626cec7",
+      "lastModificationDate": 1651281097964,
+      "contentHash": "5f71ed30697a9f5eb23cc586f4372331",
       "sourceName": "contracts/GatoswapFactory.sol",
       "solcConfig": {
         "version": "0.5.16",
@@ -181,8 +181,8 @@
       ]
     },
     "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\libraries\\GatoswapLibrary.sol": {
-      "lastModificationDate": 1651228841418,
-      "contentHash": "c2113d39d32eb24c4d8606ee9cd0460d",
+      "lastModificationDate": 1651267809825,
+      "contentHash": "82e41880ff826cd93da081276f91b904",
       "sourceName": "contracts/libraries/GatoswapLibrary.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -216,7 +216,8 @@
       },
       "imports": [
         "./SafeMath.sol",
-        "../interfaces/IGatoswapPair.sol"
+        "../interfaces/IGatoswapPair.sol",
+        "../interfaces/IGatoswapFactory.sol"
       ],
       "versionPragmas": [
         ">=0.5.0"
@@ -310,7 +311,7 @@
       ]
     },
     "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IERC20.sol": {
-      "lastModificationDate": 1651226842288,
+      "lastModificationDate": 1651266347112,
       "contentHash": "16689e0cd214ebe50985813172b4bcfb",
       "sourceName": "contracts/interfaces/IERC20.sol",
       "solcConfig": {
@@ -394,8 +395,8 @@
       ]
     },
     "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\interfaces\\IGatoswapFactory.sol": {
-      "lastModificationDate": 1651226854985,
-      "contentHash": "b6fcb2e64909b7338704671866ba2940",
+      "lastModificationDate": 1651266653250,
+      "contentHash": "bbc5b42a1ca4bf548cd82f6bd4cb5cb9",
       "sourceName": "contracts/interfaces/IGatoswapFactory.sol",
       "solcConfig": {
         "version": "0.8.10",
@@ -563,8 +564,8 @@
       ]
     },
     "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\GatoswapRouter.sol": {
-      "lastModificationDate": 1651226617807,
-      "contentHash": "521a44a607dfaf46bffe4f407eb32a80",
+      "lastModificationDate": 1651280953726,
+      "contentHash": "f9344c43b669bdaf6615e7ae9862f1a1",
       "sourceName": "contracts/GatoswapRouter.sol",
       "solcConfig": {
         "version": "0.6.6",
@@ -613,10 +614,54 @@
         "GatoswapRouter"
       ]
     },
-    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\WETH.sol": {
-      "lastModificationDate": 1651231021843,
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\test\\ERC20.sol": {
+      "lastModificationDate": 1651256496948,
+      "contentHash": "8224bb8c142f45b8fae111f05819f3b1",
+      "sourceName": "contracts/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.6"
+      ],
+      "artifacts": [
+        "Context",
+        "ERC20",
+        "SafeMath"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\test\\WETH.sol": {
+      "lastModificationDate": 1651235735948,
       "contentHash": "cb6657118ea15b5b4cb9c8cd02ab964f",
-      "sourceName": "contracts/WETH.sol",
+      "sourceName": "contracts/test/WETH.sol",
       "solcConfig": {
         "version": "0.8.10",
         "settings": {
@@ -653,6 +698,92 @@
       ],
       "artifacts": [
         "WETH"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1651204590113,
+      "contentHash": "cc4777addd464ea56fa35b1c45df0591",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "D:\\MyWork\\2022\\gato-swap-contract\\contracts\\test\\RouterEventEmitter.sol": {
+      "lastModificationDate": 1651276517340,
+      "contentHash": "59bf9740715128e18fdc7d235de768be",
+      "sourceName": "contracts/test/RouterEventEmitter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IGatoswapRouter02.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "RouterEventEmitter"
       ]
     }
   }

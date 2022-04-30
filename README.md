@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Velamis token contract
 
 Velamis is ERC20 token for Velamis tokenomics
@@ -82,3 +83,7 @@ npx hardhat run scripts/deploy.js
 
 
 
+=======
+# gato-swap-contract
+This project is GATO swap contract for our own gato token on BSC
+>>>>>>> 26a4bd67cef17c451011874b64759ffcfacf1bf7

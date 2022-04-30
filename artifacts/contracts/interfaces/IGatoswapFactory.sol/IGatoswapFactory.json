@@ -141,6 +141,19 @@
       "type": "function"
     },
     {
+      "inputs": [],
+      "name": "init_code_pair_hash",
+      "outputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
       "inputs": [
         {
           "internalType": "address",
