@@ -1,5 +1,5 @@
 # GATO SWAP Contract
-GATO SWAP Contract forks the Pancake swap.
+GATO SWAP Contract forks the Pancake swap on Binance Smart Chain.
 Change base fee to 1%.
 ### Deployed Address
 BSC testnet
